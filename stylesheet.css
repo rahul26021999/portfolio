@@ -15,7 +15,7 @@
     margin: 0px;
     font-family: 'Open Sans Regular' ;
     --bg-light : #f8f9fa;
-    --dark-blue-60: #071330a6;
+    --dark-blue-60: #0713307e;
     --dark-blue: #071330;
     --grey:#7A7A7A;
 }
@@ -57,8 +57,9 @@ nav li .nav-item:hover{
 
 .parallax {
     /* The image used */
-    background-image: url('images/image1.jpeg');
-
+    background-image: url('images/image2.jpeg');
+    filter: blur(8px);
+    -webkit-filter: blur(5px);
     /* Full height */
     height: 100vh; 
 
@@ -66,16 +67,22 @@ nav li .nav-item:hover{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+      /* Add the blur effect */
+   
 }
 .inner-parallax{
-    background-color: var(--dark-blue-60);
+    position: absolute;
+    top: 0;
     height: 100vh;
-    position: relative;
+    right: 0;
+    left: 0;
+    background-color: var(--dark-blue-60);
+    
 }
 .title-wrapper{
     position: absolute;
-    top: 30%;
+    top: 150px;
     left: 0;
     right: 0;
 }
@@ -98,14 +105,18 @@ nav li .nav-item:hover{
 }
 .content-wrapper{
     min-height: 100vh;
+}
+.content-padding{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-#about{
-    background-color: white;
+#about,
+#blog,
+#contact{
+    background-color: var(--bg-light);
 }
 #resume{
-    background-color: var(--dark-blue);
+    background-color: #000C66;
 }
 .resume-title,
 .work-title{
@@ -147,4 +158,29 @@ nav li .nav-item:hover{
 .course-grade{
     font-size: 12px;
     text-transform: uppercase;
+}
+
+footer{
+    padding: 10px;
+    background-color: var(--dark-blue);
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color:#dfdfdf;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 19px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    margin: 25px 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.social-icon:hover{
+    text-decoration: none;
+    color: blue;
 }

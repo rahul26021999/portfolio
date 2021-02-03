@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rahul Gupta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -16,23 +17,23 @@
         <li><a class="nav-item active" href="#home">Home</a></li>
         <li><a class="nav-item" href="#about">About</a></li>
         <li><a class="nav-item" href="#resume">Resume</a></li>
-        <li><a class="nav-item" href="#work">work</a></li>
-        <!-- <li class="nav-item"><a href="#blogs">Blog</a></li> -->
+        <li><a href="#blog" class="nav-item" >Blog</a></li>
         <li><a class="nav-item" href="#contact">Contact</a></li>
     </ul>
    </nav>
-   <div class="parallax" id="home"> 
+   <div class="content-wrapper" id="home"> 
+       <div class="parallax"></div>
         <div class="inner-parallax">
-        <div class="title-wrapper">
-            <div class="title">I am Rahul Gupta</div>
-            <div class="subtitle typewrite" data-period="2000" data-type='[ "Web Developer", "Android Developer" ]'><span class="wrap"></span></div>
-        </div>
+            <div class="title-wrapper">
+                <div class="title">I am Rahul Gupta</div>
+                <div class="subtitle typewrite" data-period="2000" data-type='[ "Web Developer", "Android Developer" ]'><span class="wrap"></span></div>
+            </div>
         </div>
     </div>
-   <div class="content-wrapper" id="about">
+   <div class="content-wrapper content-padding" id="about">
        <div class="container">
         <div class="row">
-            <div class="col-sm-3 mt-3">
+            <div class="col-sm-3 mt-3 mb-3">
                 <img src="images/my.jpeg" width="200px" class="rounded-circle" alt="">
             </div>
             <div class="col-sm-9">
@@ -49,7 +50,7 @@
         </div>
        </div>
     </div>
-    <div class="content-wrapper" id="resume">
+    <div class="content-wrapper content-padding" id="resume">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3"><h3 class="resume-title">Education</h3></div>
@@ -99,11 +100,17 @@
             </div>
         </div>
     </div>
-    <div class="content-wrapper" id="work">
-        work
+    <div class="content-wrapper content-padding" id="blog">
+        blog
     </div>
     <div class="content-wrapper" id="contact">
             contact
     </div>
+    <footer>
+        <a href="#" class="fa fa-facebook social-icon"></a>
+        <a href="#" class="fa fa-twitter social-icon"></a>
+        <a href="#" class="fa fa-linkedin social-icon"></a>
+        <p>Copyright 2021 Rahul Gupta <b style="font-size: 30px;">.</b> Made with <i class="fa fa-heart text-danger"></i> by Rahul Gupta</p>
+    </footer>
 </body>
 </html>

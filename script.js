@@ -57,9 +57,18 @@ $(document).ready(function(){
   });
 function scrollListner(){
   var scrollTop=$(document).scrollTop();
-  if (scrollTop > 10) { 
-    $("nav").css("background-color", "#071330");
+  if (scrollTop > 20 && scrollTop < $("#about").offset().top-50){
+    $("nav").css("display","none");
+  }
+  else if (scrollTop+50 > $("#about").offset().top){ 
+    $("nav").css("display","block");
+    $("nav").css("background-color", "white");
+    $("nav a").css("color","black")
+    $("nav a").css("border-color","black")
   } else {
+    $("nav").css("display","block");
+    $("nav a").css("color","white")
+    $("nav a").css("border-color","white")
     $("nav").css("background-color", "transparent");
   }
   console.log(scrollTop);
@@ -72,8 +81,8 @@ function scrollListner(){
     $("nav li:nth-child(2) .nav-item").removeClass("active");
     $("nav li:nth-child(1) .nav-item").removeClass("active");
   }
-  else if(scrollTop >= $("#work").offset().top){
-    console.log("work");
+  else if(scrollTop >= $("#blog").offset().top){
+    console.log("blog");
     $("nav li:nth-child(4) .nav-item").addClass("active");
     $("nav li:nth-child(5) .nav-item").removeClass("active");
     $("nav li:nth-child(3) .nav-item").removeClass("active");
