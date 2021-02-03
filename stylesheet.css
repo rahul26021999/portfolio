@@ -92,7 +92,7 @@ nav li .nav-item:hover{
     font-size: 2rem;
 }
 .typewrite .wrap{
-    border-right: 0.08em solid var(--bg-light);
+    border-right: 0.1em solid var(--bg-light);
     padding-right: 2px;
     color: var(--bg-light);
 }
@@ -124,7 +124,6 @@ nav li .nav-item:hover{
     font-family: 'Open Sans Semi Bold';
     letter-spacing: 1.1px;
     font-size: 24px;   
-    border-bottom: 1px solid white;
     text-transform: uppercase;
 }
 .about-desc{
@@ -138,7 +137,7 @@ nav li .nav-item:hover{
 .college-name , .company-name{
     font-size: 24px;
     color: var(--bg-light);
-    font-family: 'Open Sans Bold';
+    font-family: 'Open Sans Semi Bold';
 }
 
 .course-period , .work-period{
