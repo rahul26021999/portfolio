@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('font/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('font/OpenSans-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Semi Bold';
+    src: url('font/OpenSans-SemiBold.ttf');
+}
+:root{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Open Sans Regular' ;
+    --bg-light : #f8f9fa;
+    --dark-blue-60: #071330a6;
+    --dark-blue: #071330;
+    --grey:#7A7A7A;
+}
+body, html {
+    height: 100%;
+    font-family: 'Open Sans Regular' ;
+    margin: 0;
+}
+ul{
+    margin: 0px;
+    text-align: center;
+}
+nav{
+    position: fixed;
+    top: 0;
+    font-family: 'Open Sans Bold';
+    font-size: 14px;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    padding: 8px 0px;
+}
+nav li{
+    display: inline-block;
+}
+nav li .nav-item{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: var(--bg-light);
+    text-transform: uppercase;
+}
+nav li .nav-item.active{
+    border-bottom: 2px solid white;
+}
+nav li .nav-item:hover{
+    border-bottom: 2px solid white;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('images/image1.jpeg');
+
+    /* Full height */
+    height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner-parallax{
+    background-color: var(--dark-blue-60);
+    height: 100vh;
+    position: relative;
+}
+.title-wrapper{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+.title{
+    color: white;
+    font-family: 'Open Sans Semi Bold';
+    font-size: 5rem;
+    text-align: center;
+}
+.subtitle{
+    text-align: center;
+    margin-top: 5px;
+    color: var(--bg-light);
+    font-size: 2rem;
+}
+.typewrite .wrap{
+    border-right: 0.08em solid var(--bg-light);
+    padding-right: 2px;
+    color: var(--bg-light);
+}
+.content-wrapper{
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#about{
+    background-color: white;
+}
+#resume{
+    background-color: var(--dark-blue);
+}
+.resume-title,
+.work-title{
+    font-family: 'Open Sans Semi Bold';
+    letter-spacing: 1.1px;
+    font-size: 24px;
+    display: inline-block;   
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--bg-light);
+}
+.about-title{
+    color: black;
+    font-family: 'Open Sans Semi Bold';
+    letter-spacing: 1.1px;
+    font-size: 24px;   
+    border-bottom: 1px solid white;
+    text-transform: uppercase;
+}
+.about-desc{
+    line-height: 30px;
+    margin-top: 20px;
+}
+.education-item,.work-item{
+    margin-bottom: 40px;
+    color: var(--bg-light);
+}
+.college-name , .company-name{
+    font-size: 24px;
+    color: var(--bg-light);
+    font-family: 'Open Sans Bold';
+}
+
+.course-period , .work-period{
+    font-size: 12px;
+    font-style: italic;
+}
+.course-grade{
+    font-size: 12px;
+    text-transform: uppercase;
+}
