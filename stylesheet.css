@@ -16,7 +16,9 @@
     font-family: 'Open Sans Regular' ;
     --bg-light : #f8f9fa;
     --dark-blue-60: #0713307e;
-    --dark-blue: #071330;
+    --dark-blue: #050A30;
+    --navy-blue:#000C66;
+    --baby-blue:#7EC8E3;
     --grey:#7A7A7A;
 }
 body, html {
@@ -110,13 +112,15 @@ nav li .nav-item:hover{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-#about,
-#blog,
-#contact{
+#blog{
+    /* background-color: var(--baby-blue); */
+}
+#contact,
+#about{
     background-color: var(--bg-light);
 }
 #resume{
-    background-color: #000C66;
+    background-color: var(--navy-blue);
 }
 .resume-title,
 .work-title{
