@@ -179,7 +179,7 @@
         font-family: 'NewFont';
         letter-spacing: 6px;
         font-size: 24px;
-        display: inline-block;
+        display: block;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
@@ -188,6 +188,10 @@
         line-height: 30px;
         font-family: "Open Sans Regular";
         margin-top: 20px;
+    }
+    
+    .about-img {
+        height: 270px;
     }
     
     .skill-box {
@@ -200,7 +204,7 @@
     .skills-progress {
         height: 5px;
         margin-top: 10px;
-        width: 450px;
+        width: 80%;
     }
     
     .education-item {
@@ -397,4 +401,67 @@
         outline: 0;
         border: 1px solid #050A30;
         box-shadow: none;
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .title {
+            letter-spacing: 3px;
+            font-size: 3rem;
+        }
+        .subtitle {
+            letter-spacing: 5px;
+            font-size: 1rem;
+        }
+        .content-wrapper {
+            min-height: auto;
+            height: auto;
+        }
+        .content-padding {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .about-img {
+            height: 200px;
+        }
+        .about-desc {
+            text-align: justify;
+        }
+        .section-title {
+            text-align: center;
+        }
+        #skills-sphere {
+            display: none;
+        }
+        .skills-progress {
+            height: 5px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .work-item {
+            text-align: center;
+        }
+        .contact-image {
+            text-align: center;
+        }
+        .contact-message {
+            margin-top: 20px;
+        }
+        .download-resume {
+            text-align: center;
+        }
+        nav {
+            display: none;
+        }
+        .education-item {
+            transform: scale(1);
+        }
+        .education-item:hover {
+            transform: scale(1);
+        }
+        .parallax {
+            height: 480px;
+        }
+        .inner-parallax {
+            height: 480px;
+        }
     }

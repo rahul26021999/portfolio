@@ -57,6 +57,9 @@ $(document).ready(function() {
 });
 
 function scrollListner() {
+    if ($(window).width() < 481) {
+        return;
+    }
     var scrollTop = $(document).scrollTop();
     if (scrollTop > 20 && scrollTop < $("#about").offset().top - 50) {
         $("nav").css("display", "none");
