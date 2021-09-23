@@ -186,6 +186,7 @@
     
     .about-desc {
         line-height: 30px;
+        font-family: "Open Sans Regular";
         margin-top: 20px;
     }
     
@@ -318,7 +319,6 @@
         font-family: "Open Sans Regular";
         font-size: 18px;
         color: var(--dark-blue);
-        text-transform: capitalize;
         font-weight: normal;
         margin: 10px 0px 10px 0px;
         letter-spacing: 1.1px;
