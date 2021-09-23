@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,110 +8,317 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="button.css">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
     <script src="script.js"></script>
+    <script src="sphere.js"></script>
+    <script src="pt.min.js"></script>
+
 </head>
+
 <body>
     <nav>
-    <ul>
-        <li><a class="nav-item active" href="#home">Home</a></li>
-        <li><a class="nav-item" href="#about">About</a></li>
-        <li><a class="nav-item" href="#resume">Resume</a></li>
-        <li><a href="#blog" class="nav-item" >Blog</a></li>
-        <li><a class="nav-item" href="#contact">Contact</a></li>
-    </ul>
-   </nav>
-   <div class="content-wrapper" id="home"> 
-       <div class="parallax"></div>
+        <ul id="navbar">
+            <li><a class="nav-item active" href="#home">Home</a></li>
+            <li><a class="nav-item" href="#about">About</a></li>
+            <li><a class="nav-item" href="#skills">skills</a></li>
+            <li><a class="nav-item" href="#education">Education</a></li>
+            <li><a class="nav-item" href="#experience">Experience</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper" id="home">
+        <div class="parallax"></div>
         <div class="inner-parallax">
             <div class="title-wrapper">
                 <div class="title">I am Rahul Gupta</div>
-                <div class="subtitle typewrite" data-period="2000" data-type='[ "Web Developer", "Android Developer" ]'><span class="wrap"></span></div>
+                <div class="subtitle typewrite" data-period="2000" data-type='[ "Web Developer", "Full Stack Developer" ,"Android Developer" ]'><span class="wrap"></span></div>
             </div>
         </div>
     </div>
-   <div class="content-wrapper content-padding" id="about">
-       <div class="container">
-        <div class="row">
-            <div class="col-sm-3 mt-3 mb-3">
-                <img src="images/my.jpeg" width="200px" class="rounded-circle" alt="">
+    <div class="content-wrapper content-padding" id="about">
+        <div class="container">
+            <div class="row vertical-align">
+                <div class="col-sm-4 text-center">
+                    <img src="images/my.jpeg" height="50%" class="rounded-circle grayscale mt-5" alt="Rahul Gupta">
+                </div>
+                <div class="col-sm-8">
+                    <h3 class="section-title mb-2"><strong>About</strong></h3>
+                    <p class="about-desc">
+                        Experienced Back End Developer with a demonstrated history of working in the information technology and services industry. Skilled in Mobile Application Development, Firebase, Android, Android Development, and Web Development. Strong engineering professional
+                        with a Master of Computer Applications - MCA focused in Computer Science from Jawaharlal Nehru University.
+                        <br> <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia non deleniti dolorem, dolore, rem adipisci quidem recusandae dolores nam enim corporis quam cupiditate. Distinctio accusamus tenetur id? Excepturi, aliquid
+                        quaerat!
+                    </p>
+                    <div class="mt-5">
+                        <button class="glow-on-hover" type="button">DOWNLOAD RESUME</button>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-sm-9">
-                <h3 class="about-title mb-2"><strong>About</strong></h3>
-                <p class="about-desc">I am in my pre-final year of MCA at Jawaharlal Nehru University and have done graduation in B.Sc (H) Computer Science from Keshav Mahavidyalaya, Delhi University. 
-                    I am a keen & fast learner and love to share my knowledge in the best ways possible.
-                    I'm passionate about Web Development and have developed skills in PHP with Laravel Framework and exploring other Web Technologies as well such as React js and Node js.
-                    Besides Web Development, I am also an Android developer(Developed android applications for a tech-based startup) and Love to do coding in java and python language as well.
-                    Recently, I have completed 5 fundamental courses in python i.e the Specialization course in python from Coursera, and thereby developed an interest in Data Science & Machine Learning field.
-                    According to my point of view, to build something, the most important aspect is coding. Also, once you become familiar with coding, there is a certain empowerment that comes with it. So, this is the most important aspect of coding that excites me to learn more and grow my skills to meet daily real world challenges.
-                </p>
-            </div>
-            
         </div>
-       </div>
     </div>
-    <div class="content-wrapper content-padding" id="resume">
+    <div class="content-wrapper content-padding dark-background" id="skills">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3"><h3 class="resume-title">Education</h3></div>
-                <div class="col-sm-9">
-                    <div class="education-item">
-                        <h3 class="college-name">Jawaharlal Nehru University</h3>
-                        <p class="course-name">Master of Computer Applications </p>
-                        <p class="course-period">Aug 2019 - April 2022</p>
-                        <p class="course-grade">cgpa - 7.44</p>
+                <div class="col-sm-6">
+                    <div class="section-title mb-2"><strong>Skills</strong></div>
+                    <div class="skill-box">
+                        <div class="skills-title">
+                            Backend Development
+                        </div>
+                        <div class="progress skills-progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="education-item">
-                        <h3 class="college-name">Keshav Mahavidyalaya, University of Delhi ​</h3>
-                        <p class="course-name">Bsc (H) Computer Science</p>
-                        <p class="course-period">August 2016 - May 2019</p>
-                        <p class="course-grade">cgpa - 8.23</p>
+                    <div class="skill-box">
+                        <div class="skills-title">
+                            Frontend Development
+                        </div>
+                        <div class="progress skills-progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skills-title">
+                            Android Development
+                        </div>
+                        <div class="progress skills-progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skills-title">
+                            Problem Solving
+                        </div>
+                        <div class="progress skills-progress">
+                            <div class="progress-bar bg-cyan" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-sm-6">
+                    <div id="skills-sphere"></div>
+                </div>
+
+
             </div>
-            <div class="row mt-3">
-                <div class="col-sm-3"><h3 class="work-title">Work</h3></div>
-                <div class="col-sm-9">
-                    <div class="work-item">
-                        <h3 class="company-name">Across The Globe (ATG)</h3>
-                        <p class="position-name">​Tech Lead</p>
-                        <p class="work-period">July 2019 - PRESENT</p>
-                        <p class="work-done">Developed Backend in PHP Framework - Laravel, Managing Deployment on Amazon Web Services, Database Designing, Implemented API's and Security Using JWT</p>
+        </div>
+
+    </div>
+
+    <div class="content-wrapper content-padding" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title mb-4 text-center d-block"><strong>Education</strong></div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="education-item">
+                        <div class="college-image text-center">
+                            <img class="rounded-circle grayscale" src="https://content.jdmagicbox.com/comp/delhi/q2/011pxx11.xx11.001186356175.e0q2/catalogue/keshav-mahavidyalaya-college-pitampura-delhi-colleges-49ifm9w.jpg?clr=660066" alt="KMV">
+                        </div>
+                        <div class="course-name">Bsc H. Computer Science</div>
+                        <div class="college-name">Keshav Mahavidyalaya, University of Delhi</div>
+                        <div class="course-period">August 2016 - May 2019</div>
+                        <div class="course-grade">Cgpa 8.23</div>
                     </div>
-                    <div class="work-item">
-                        <h3 class="company-name">Datsme</h3>
-                        <p class="position-name">​Android Developer</p>
-                        <p class="work-period">July 2018 - Jan 2021</p>
-                        <p class="work-done">Build Application From Scratch using MVVM, Kotlin, XML, Java. Managing Backend on firebase</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="education-item jnu">
+                        <div class="college-image text-center">
+                            <img class="rounded-circle grayscale" src="https://images.indianexpress.com/2020/08/jnu-1200.jpg" alt="JNU">
+                        </div>
+                        <div class="course-name">Master of Computer Applications</div>
+                        <div class="college-name">Jawaharlal Nehru University, New Delhi</div>
+                        <div class="course-period">Aug 2019 - June 2022</div>
+                        <div class="course-grade">89 %</div>
                     </div>
-                    <div class="work-item">
-                        <h3 class="company-name">W3Dev Private Limited</h3>
-                        <p class="position-name">​Web Backend Intern</p>
-                        <p class="work-period">August 2020 - September 2020</p>
-                        <p class="work-done">APIs Security using JWT, API Documentation, Payment Gateway Integration, Integrated Unit Testing</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="education-item">
+                        <div class="college-image text-center">
+                            <img class="rounded-circle grayscale" src="https://cache.careers360.mobi/media/schools/social-media/media-gallery/3977/2019/4/24/Kamal%20Public%20School-Building.jpg" alt="KPS">
+                        </div>
+                        <div class="course-name">High School</div>
+                        <div class="college-name">Kamal Public Sr. Sec. School, Delhi</div>
+                        <div class="course-period">April 2015 - March 2016</div>
+                        <div class="course-grade">89 %</div>
                     </div>
-                    <div class="work-item">
-                        <h3 class="company-name">YAY! - Girlscript Foundation</h3>
-                        <p class="position-name">PHP & MySQL Mentor</p>
-                        <p class="work-period">July2020 - Present</p>
-                        <p class="work-done"></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div style="position: relative;" id="experience">
+        <div style="overflow-x:hidden;padding:0px;width:100%;">
+            <section id="home" class="flex height-fix canvas-parent" style="width:100%">
+                <div id="pt" class="canvas"><canvas id="canvas" width="100%" style="width: 100%;"></canvas></div>
+            </section>
+        </div>
+        <div id="work-container" class="container" style="position:absolute;top:0;left:0;right:0;">
+            <div class="content-wrapper content-padding">
+                <div class="row">
+                    <div class="col-sm-12 mb-5">
+                        <div class="section-title mb-4 text-center text-white d-block"><strong>Experience</strong></div>
                     </div>
+                    <div class="col-sm-6">
+                        <div class="work-item row">
+                            <div class="col-sm-3">
+                                <div class="company-image"><img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C510BAQFO1hAAXUH7qw/company-logo_200_200/0/1575358701761?e=2159024400&v=beta&t=dzLXf90EKpR9SGErs7SJ5DWJFz4IHzLOdS2NLB56T08" alt="ATG"></div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="position-name">​Tech Lead</div>
+                                <div class="company-name">Across The Globe</div>
+                                <div class="work-period">July 2019 - Present</div>
+                                <div class="work-done">
+                                    <ul>
+                                        <li>Followed SDLC process</li>
+                                        <li class="techstack">PHP & Its Framework, Laravel</li>
+                                        <li>Worked on Eloquent ORM, MVC, Migrations, Middlewares.</li>
+                                        <li>Developed & Integrated REST APIs. Implemented Json Web Token Authentication for API's Security.</li>
+                                        <li>Implemented Multi Login system for Admin and Users.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="work-item row">
+                            <div class="col-sm-3">
+                                <div class="company-image"><img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C560BAQExOI87iQIF4g/company-logo_200_200/0/1589789364899?e=2159024400&v=beta&t=dQ2eg0mDUZF0BdvHhX7wwk62CTn0HrprorheXFNrKKk" alt="Banao"></div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="position-name">Backend Developer - Freelancer</div>
+                                <div class="company-name">Banao Technologies</div>
+                                <div class="work-period"></div>
+                                <div class="work-done">
+                                    <ul>
+                                        <li>Project "SERVII" -
+                                            <ul>
+                                                <li class="techstack">Java Spring boot, Postgresql, AWS, Git, HTML, CSS, JavaScript , Bootstrap</li>
+                                                <li>Built Admin Panel to manage application</li>
+                                                <li>Developed Rest APIs</li>
+                                                <li>Unique QR Code Generation</li>
+                                                <li>Implemented Multi-Authentication System</li>
+                                            </ul>
+                                        </li>
+                                        <li>Project "Jackett"
+                                            <ul>
+                                                <li class="techstack">Java Spring boot, MySql</li>
+                                                <li>Developed Rest APIs</li>
+                                                <li>API Documentation using Postman</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="work-item row">
+                            <div class="col-sm-3">
+                                <div class="company-image"><img class="rounded-circle" src="https://playsposter.com/wp-content/uploads/2020/02/Datsme-A-Friend-Finder-App-MOD-APK-1.1.0.png" alt="Datsme"></div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="position-name">​Android Developer</div>
+                                <div class="company-name">Datsme</div>
+                                <div class="work-period">July 2018 - January 2021</div>
+                                <div class="work-done">
+                                    <ul>
+                                        <li>Worked with Java / Kotlin / XML / MVVM</li>
+                                        <li>Firebase for Backend Development</li>
+                                        <li>ARNs and Crashes Observation</li>
+                                        <!-- https://play.google.com/store/apps/details?id=me.dats.com.datsme -->
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="work-item row">
+                            <div class="col-sm-3">
+                                <div class="company-image"><img class="rounded-circle" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/lidzx47t5qnsw5g0rhtk" alt="W3 Dev"></div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="position-name">​Web Backend Intern</div>
+                                <div class="company-name">W3Dev Private Limited</div>
+                                <div class="work-period">August 2020 - September 2020</div>
+                                <div class="work-done">
+                                    <ul>
+                                        <li class="techstack">Laravel Framework, PHP, MYSQL, Docker</li>
+                                        <li>APIs Security using JWT</li>
+                                        <li>Integrated Unit Testing</li>
+                                        <li>API Documentation</li>
+                                        <li>Payment Gateway Integration -Stripe</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="content-wrapper content-padding" id="blog">
-        blog
     </div>
-    <div class="content-wrapper" id="contact">
-            contact
+    </div>
+
+    <div class="content-wrapper content-padding light-background" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 mb-3">
+                    <div class="section-title mb-4 text-center d-block"><strong>Contact</strong></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contact-image">
+                        <img src="images/my.jpeg" alt="Rahul Gupta" class="rounded-circle">
+                    </div>
+                    <div class="contact-name"><i class="mr-2 fa fa-user"></i> Rahul Gupta</div>
+                    <div class="contact-email"><i class="mr-2 fa fa-envelope"></i> rahul26021999@gmail.com</div>
+                    <div class="contact-number"><i class="mr-2 fa fa-phone"></i> 9650402190</div>
+                    <div class="contact-address"><i class="mr-2 fa fa-map-marker"></i> Uttam Nagar, New Delhi - 110059</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="contact-message text-center mb-4">Have a question or want to work together?</div>
+                    <form action="mailto:rahul26021999@gmail.com" method=GET>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" name="ContactName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email" name="”EmailForm”">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="body" class="form-control" placeholder="Message" id="body" rows="6"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-dark-primary" value="Send">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <a href="#" class="fa fa-facebook social-icon"></a>
         <a href="#" class="fa fa-twitter social-icon"></a>
         <a href="#" class="fa fa-linkedin social-icon"></a>
-        <p>Copyright 2021 Rahul Gupta <b style="font-size: 30px;">.</b> Made with <i class="fa fa-heart text-danger"></i> by Rahul Gupta</p>
+        <p>Copyright <span>&#169;</span>2021 Rahul Gupta <b style="font-size: 30px;">.</b> Made with <i class="fa fa-heart text-danger"></i> by Rahul Gupta</p>
     </footer>
+
 </body>
+<script src="beam.js"></script>
+
 </html>
